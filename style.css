@@ -193,3 +193,59 @@ section {
     font-weight: bold;
     color: #333;
 }
+
+h2 {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+    padding: 10px 20px;
+    color: #333;
+  }
+
+  h2:before, h2:after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 50%;
+    height: 2px;
+    background-color: #333;
+  }
+
+  h2:before {
+    left: 0;
+  }
+
+  h2:after {
+    right: 0;
+  }
+
+  h2 span {
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+    padding: 0 10px;
+    font-weight: bold;
+  }
+
+  h2 span:before, h2 span:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.1);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+
+  h2 span:after {
+    transform-origin: right;
+  }
+
+  h2:hover span:before, h2:hover span:after {
+    transform: scaleX(1);
+  }
