@@ -33,6 +33,21 @@ section {
   background-color: white;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-content {
+  animation: fadeIn 1s ease-in-out;
+}
+
 .icons {
   margin-top: 20px;
 }
