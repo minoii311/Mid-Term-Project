@@ -251,12 +251,18 @@ h2 {
     right: 0;
   }
 
-  h2 span {
-    position: relative;
-    z-index: 1;
-    background-color: #fff;
-    padding: 0 10px;
-    font-weight: bold;
+  #about h2 span {
+    background-color: transparent;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  #contact h2 span {
+    background-color: transparent;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
   }
 
   h2 span:before, h2 span:after {
