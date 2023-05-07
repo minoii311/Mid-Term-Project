@@ -27,6 +27,33 @@ nav ul li a {
 
 section {
   padding: 50px;
+  text-align: center;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.education,
+.skills {
+    width: 48%;
+}
+
+.skills ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills li {
+    margin-bottom: 10px;
+}
+
+.skills li strong {
+   display: inline-block;
+   width: 80px;
 }
 
 #home {
@@ -44,16 +71,30 @@ section {
   }
 }
 
+.fadeIn {
+    animation: fadeIn 1s ease-in-out;
+}
+
 .about-content {
   animation: fadeIn 1s ease-in-out;
 }
 
 .icons {
-  margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
 }
 
 .icons a {
-  margin-right: 10px;
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.icons a:hover {
+    transform: scale(1.2);
 }
 
 #about {
