@@ -93,6 +93,14 @@ section {
 
 }
 
+.icons a img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+
 .icons a:hover {
     transform: scale(1.2);
 }
