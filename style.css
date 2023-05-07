@@ -118,33 +118,34 @@ section {
   display: none;
 }
 
-#home h1 {
+ #home h1 {
     font-size: 48px;
     color: #333;
     margin-bottom: 20px;
+    text-align: center;
     overflow: hidden;
     white-space: nowrap;
     border-right: 2px solid #333;
-    animation: typing 2s steps(40) infinite, blink-caret 0.5s step-end infinite;
-}
+    animation: typing 4s steps(40) 1s 1 normal, blink-caret 0.5s step-end infinite;
+  }
 
-@keyframes typing {
+  @keyframes typing {
     from {
       width: 0;
     }
     to {
       width: 100%;
     }
-}
+  }
 
-@keyframes blink-caret {
+  @keyframes blink-caret {
     from, to {
       border-color: transparent;
     }
-  50% {
+    50% {
       border-color: #333;
     }
-}
+  }
 
   .about-content {
     display: flex;
