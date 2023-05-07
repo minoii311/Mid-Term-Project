@@ -138,43 +138,22 @@ section {
   background-color: white;
 }
 
-   #home h1 {
+  #home h1 {
     font-size: 48px;
     color: #333;
     margin-bottom: 20px;
     text-align: center;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 2px solid #333;
-    animation: typing 4s steps(40) 1 normal;
+    opacity: 0;
+    animation: fade-in 2s forwards;
   }
 
-  @keyframes typing {
-    0% {
-      width: 0;
+  @keyframes fade-in {
+    from {
+      opacity: 0;
     }
-    100% {
-      width: 100%;
+    to {
+      opacity: 1;
     }
-  }
-
-  @keyframes blink-caret {
-    from, to {
-      border-color: transparent;
-    }
-    50% {
-      border-color: #333;
-    }
-  }
-
-  #home h1::after {
-    content: "";
-    width: 2px;
-    height: 100%;
-    background-color: #333;
-    position: absolute;
-    right: -2px;
-    animation: blink-caret 0.5s step-end infinite;
   }
 
 .about-content {
@@ -251,36 +230,8 @@ h2 {
     right: 0;
   }
 
-  #about h2 span {
-    color: #333;
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
-
-  #contact h2 span {
-    color: #333;
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
-
-  h2 span:before, h2 span:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    background-color: rgba(0, 0, 0, 0.1);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s ease;
-  }
-
-  h2 span:after {
-    transform-origin: right;
-  }
-
-  h2:hover span:before, h2:hover span:after {
-    transform: scaleX(1);
+ #about h2 span, #contact h2 span {
+    color: #000;
+    text-decoration: underline;
+    border: none;
   }
