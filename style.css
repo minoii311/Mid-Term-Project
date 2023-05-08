@@ -60,6 +60,7 @@ header {
   background-color: white;
   color: black;
   width: 500px;
+  height: 360px;
   padding: 20px;
   margin: 30px auto;
   text-align: center;
@@ -167,7 +168,7 @@ section {
 #home h1 {
   font-size: 48px;
   color: #333;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   opacity: 0;
   animation: fade-in 2s forwards;
   font-family: "Nunito", sans-serif;
@@ -185,11 +186,11 @@ section {
 }
 
 .fadeIn {
-    animation: fadeIn 1s ease-in-out;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .fade-in {
-  animation: fade-in 1s ease-in-out;
+  animation: fade-in 2s ease-in-out;
 }
 
 @keyframes fade-in {
