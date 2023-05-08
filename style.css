@@ -19,7 +19,7 @@ header {
 .profile-box {
   display: flex;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .profile-img {
@@ -27,6 +27,7 @@ header {
   height: 150px;
   border-radius: 50%;
   overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -53,6 +54,27 @@ header {
 .profile-info p {
   font-size: 16px;
   color: #666;
+}
+
+.box.favorite-artist {
+  background-color: #000;
+  color: #fff;
+  margin-top: 30px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.box.favorite-artist h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.box.favorite-artist p {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 5px;
 }
 
 nav ul {
