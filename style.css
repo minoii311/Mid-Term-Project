@@ -9,57 +9,54 @@ header {
   padding: 20px;
 }
 
-.profile-card {
+.box.profile {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-top: 40px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
 }
 
-.profile-card .profile-img {
-  width: 200px;
-  height: 200px;
-  border-radius: 10px;
+.box.profile .profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-right: 20px;
 }
 
-.profile-card .profile-img img {
+.box.profile .profile-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.profile-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.box.profile .profile-info {
+  flex-grow: 1;
 }
 
-.profile-card:hover .profile-img {
-  transform: scale(1.1);
-}
-
-.profile-card .profile-details {
-  margin-left: 20px;
-}
-
-.profile-card .profile-details h3 {
+.box.profile h3 {
   font-size: 24px;
   margin-bottom: 10px;
+  font-family: "Arial", sans-serif;
 }
 
-.profile-card .profile-details p {
+.box.profile p {
   font-size: 16px;
   margin-bottom: 5px;
+  font-family: "Arial", sans-serif;
 }
 
 .box.favorite-artist {
   background-color: white;
   color: black;
-  width: 400px;
+  width: 500px;
   padding: 20px;
-  margin-top: 30px;
+  margin-top: 30px auto;
+  text-align: center;
 }
 
 .box.favorite-artist h3 {
