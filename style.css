@@ -9,26 +9,25 @@ header {
   padding: 20px;
 }
 
-.profile {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-.profile-box {
+.profile-card {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-top: 40px;
 }
 
-.profile-img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+.profile-card .profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease-in-out;
+}
+
+.profile-card .profile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .profile-img img {
@@ -37,44 +36,44 @@ header {
   object-fit: cover;
 }
 
-.profile-box:hover .profile-img {
+.profile-card:hover .profile-img {
   transform: scale(1.1);
 }
 
-.profile-info {
+.profile-card .profile-details {
   margin-left: 20px;
 }
 
-.profile-info h3 {
-  margin-bottom: 10px;
+.profile-card .profile-details h3 {
   font-size: 24px;
-  color: #333;
+  margin-bottom: 10px;
 }
 
-.profile-info p {
+.profile-card .profile-details p {
   font-size: 16px;
-  color: #666;
+  margin-bottom: 5px;
 }
 
 .box.favorite-artist {
-  background-color: #000;
-  color: #fff;
-  margin-top: 30px;
+  background-color: white;
+  color: black;
+  width: 400px;
   padding: 20px;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
 }
 
 .box.favorite-artist h3 {
   font-size: 24px;
   margin-bottom: 10px;
-  color: #fff;
 }
 
 .box.favorite-artist p {
   font-size: 16px;
-  color: #fff;
-  margin-bottom: 5px;
+}
+
+.box.favorite-artist iframe {
+  width: 100%;
+  height: 100%;
 }
 
 nav ul {
